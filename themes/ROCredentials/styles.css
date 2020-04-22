@@ -1,0 +1,75 @@
+body {
+  background-color: #f0f0f0;
+  margin: 13px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+#button_close {
+  margin-left: 10px;
+}
+
+input {
+  border-color: #7a7a7a;
+  border-style: solid;
+  border-width: 1px;
+  height: 20px;
+}
+
+#checkbox_save {
+  margin-left: 0;
+}
+
+#container_lower_buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#container_checkbox, #container_center_buttons {
+  align-items: center;
+  display: flex;
+}
+
+.container_form_input {
+  align-items: center;
+  display: flex;
+  margin-bottom: 7px
+}
+
+.container_form_input input, #container_checkbox {
+  width: 60%;
+}
+
+.container_form_input label, #container_url {
+  width: 40%;
+}
+
+.container_form_input input {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#container_center_buttons {
+  margin-bottom: 5px
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: #e1e1e1;
+}
+
+button:hover {
+  background-color: #e6f2ff;
+}
+
+#button_close, #button_start, #button_url {
+  width: 85px;
+  border-color: #adadad;
+  border-style: solid;
+  border-width: 1px;
+  min-height: 22px;
+}
+
+input:focus, input:active, button:focus, button:active {
+  outline: #3399ff;
+}
