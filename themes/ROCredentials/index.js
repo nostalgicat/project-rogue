@@ -47,4 +47,20 @@ startButton.addEventListener('click', async (event) => {
 });
 
 const openClient = (username, password) => {
+    const childProcess = require('child_process');
+
+    const command = "cmd";
+    const cliArguments = [
+      '/s',
+      '/c',
+      'start',
+      '""',
+      '/b',
+      '/wait',
+      '"RagExe.exe"',
+      `-t:${password} ${username} 1rag1`,
+      '"RagExe.exe"'
+    ];
+    const childProcessOptions = { windowsVerbatimArguments: true };
+    const subprocess = childProcess.spawn(command, cliArguments, childProcessOptions);
 };
